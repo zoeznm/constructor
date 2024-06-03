@@ -22,13 +22,13 @@ const names = [
 ];
 
 const makeMember = require('./work-3.js');
-console.log(makeMember(1, "김보미"));
 
-let arrayMembers=[];
+let arrayMembers = [];
 
-for (let i=0; i <names.length; i++) {
-  let member = makeMember(i, names[i])
+names.forEach((name, i) => {
+  let member = makeMember(i, name);
   arrayMembers.push(member);
-}
+});
+
 
 console.log(arrayMembers);
