@@ -6,3 +6,5 @@ class MakeCoffee {
     this.milk=milk;
   }
 }
+let test = new MakeCoffee('대전', 300, false, true);
+console.log (test);
